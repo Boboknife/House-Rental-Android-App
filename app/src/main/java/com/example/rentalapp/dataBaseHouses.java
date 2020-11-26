@@ -5,15 +5,15 @@ import android.widget.ImageView;
 
 public class dataBaseHouses implements Serializable {
     
-    private static int maxCapacity;
+    private static int maxCapacity = 100;
     private int size;
-    protected House houseArr[];
+    protected House houseArr[] = new House[maxCapacity];
 
-public dataBaseHouses(){
-    maxCapacity = 100;
-    size = 2;
-    houseArr = new House[maxCapacity];
-}
+    public dataBaseHouses(){
+        size = 2;
+        houseArr[0] = new House();
+    }
+
     public int setImageatIndex(int index, ImageView image){
         houseArr[index].setImage(image);
         if(index >100)
