@@ -17,9 +17,8 @@ public class selectRoom extends AppCompatActivity {
 
     public void selectHouse(View view){
         //openActivity4();
-        //int x = d1.setImageatIndex(0,image);
-        //int y = d1.setvisible(0);
-        image.setVisibility(View.VISIBLE);
+        int x = d1.setImageatIndex(0,image);
+        int y = d1.setvisible(0);
     }
 
     public void openActivity4(){
