@@ -18,8 +18,8 @@ public class login extends AppCompatActivity {
 
     public void openActivity2(){
         Intent intent = new Intent (this, Search.class ); // intent opens a new window
-       dataBaseHouses d1 = new dataBaseHouses(); //creating a database
-       intent.putExtra("dataBaseHouses", d1);
+        dataBaseHouses d1 = new dataBaseHouses(); //creating a database
+        intent.putExtra("dataBaseHouses", d1);
         startActivity(intent);
     }
     public void openActivity5(){
