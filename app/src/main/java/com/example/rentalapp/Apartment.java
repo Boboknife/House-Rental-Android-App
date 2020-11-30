@@ -1,6 +1,7 @@
 package com.example.rentalapp;
 
-public class House extends Rental {
+public class Apartment extends Rental {
+
     private int numRooms;
     private int numGuests;
     private int numBathrooms;
